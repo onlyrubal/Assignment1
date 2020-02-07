@@ -6,11 +6,60 @@ using System.Threading.Tasks;
 
 namespace Assignment1
 {
-    class Program
+    public class Rectangle
     {
-        static void Main(string[] args)
+        private int length;
+        private int width;
+
+        // Initializing Setters and Getters.
+        public int GetLength()
         {
-            Rectangle rectangle = new Rectangle();
+            return this.length;
         }
+
+        public void SetLength(int length)
+        {
+            this.length = length;
+        }
+
+        public int GetWidth()
+        {
+            return this.width;
+        }
+
+        public void SetWidth(int width)
+        {
+            this.width = width;
+        }
+
+
+        // Default Constructor
+        public Rectangle()
+        {
+            this.length = 1;
+            this.width = 1;
+        }
+
+        // Parameterized constructor
+        public Rectangle(int length, int width)
+        {
+            this.length = length;
+            this.width = width;
+        }
+
+        // Method to get the Perimeter of the Rectangle
+        public int GetPerimeter()
+        {
+            return (2 * (this.length + this.width));
+        }
+
+        // Method to get the Area of the Rectangle.
+        public int GetArea()
+        {
+            return (this.length * this.width);
+        }
+
+
+
     }
 }
