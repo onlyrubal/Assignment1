@@ -17,9 +17,10 @@ namespace Assignment1
             return this.length;
         }
 
-        public void SetLength(int length)
+        public int SetLength(int length)
         {
             this.length = length;
+            return this.length;
         }
 
         public int GetWidth()
@@ -27,9 +28,10 @@ namespace Assignment1
             return this.width;
         }
 
-        public void SetWidth(int width)
+        public int SetWidth(int width)
         {
             this.width = width;
+            return this.width;
         }
 
 
